@@ -1,24 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-      './*.{html,js}',
-    './public/index.html',],
+    './*.{html,js}',
+    './public/index.html',
+    './public/scripts/**/*.js',
+  ],
   theme: {
-    backgroundSize:{
-      '90%':'90%'
+    backgroundSize: {
+      '90%': '90%'
     },
-    
+
     extend: {
-      container:{
-        center:true,
-        padding:{
-          md:'2rem',
-          sm:'2rem',
+      container: {
+        center: true,
+        padding: {
+          md: '2rem',
+          sm: '2rem',
         }
       },
-      colors:{
-        purple:"#C0B7E8",
-        maincolor:'#302C42',
+      colors: {
+        purple: "#C0B7E8",
+        maincolor: '#302C42',
       }
     },
   },
